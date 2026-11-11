@@ -1,0 +1,7 @@
+{
+  "formatVersion": 1,
+  "tool": "Acumatica Git Sync",
+  "objectTypes": {
+    "GenericInquiry": "generic-inquiries"
+  }
+}
