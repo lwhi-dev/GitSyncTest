@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GenericInquiry formatVersion="1" key="ff3e500a-44ea-4aaa-b205-63977f9b8f19" name="AI Unit Consumption" sourceVersion="26.200.0334">
+  <Table name="GIDesign">
+    <Row>
+      <DesignID>ff3e500a-44ea-4aaa-b205-63977f9b8f19</DesignID>
+      <AutoConfirmDelete>false</AutoConfirmDelete>
+      <DisableCountsAndTotals>false</DisableCountsAndTotals>
+      <ExportTop>0</ExportTop>
+      <ExposeToAiAssistant>true</ExposeToAiAssistant>
+      <ExposeViaMobile>false</ExposeViaMobile>
+      <ExposeViaOData>false</ExposeViaOData>
+      <FilterColCount>3</FilterColCount>
+      <MassActionsOnRecordsEnabled>false</MassActionsOnRecordsEnabled>
+      <MassDeleteEnabled>false</MassDeleteEnabled>
+      <MassRecordsUpdateEnabled>false</MassRecordsUpdateEnabled>
+      <Name>AI Unit Consumption</Name>
+      <NewRecordCreationEnabled>false</NewRecordCreationEnabled>
+      <NotesAndFilesTable>$&lt;None&gt;</NotesAndFilesTable>
+      <PageSize>0</PageSize>
+      <ShowArchivedRecords>false</ShowArchivedRecords>
+      <ShowDeletedRecords>false</ShowDeletedRecords>
+      <UseDataWarehouse>false</UseDataWarehouse>
+    </Row>
+  </Table>
+  <Table name="GITable">
+    <Row>
+      <DesignID>ff3e500a-44ea-4aaa-b205-63977f9b8f19</DesignID>
+      <Alias>Billing</Alias>
+      <Name>PX.ML.Chat.Licensing.DAC.MLAIAssistantUnitsConsumptionHistory</Name>
+      <Type>0</Type>
+    </Row>
+  </Table>
+  <Table name="GIRelation" />
+  <Table name="GIOn" />
+  <Table name="GIWhere" />
+  <Table name="GIGroupBy">
+    <Row>
+      <DesignID>ff3e500a-44ea-4aaa-b205-63977f9b8f19</DesignID>
+      <LineNbr>1</LineNbr>
+      <DataFieldName>=CStr(Year([Billing.Date]))+CStr(DayOfYear([Billing.Date]))</DataFieldName>
+      <IsActive>true</IsActive>
+    </Row>
+    <Row>
+      <DesignID>ff3e500a-44ea-4aaa-b205-63977f9b8f19</DesignID>
+      <LineNbr>3</LineNbr>
+      <DataFieldName>=IIf(InStrRev([Billing.UserID], '@' )&gt;0, Left([Billing.UserID], InStrRev([Billing.UserID], '@' )-1),[Billing.UserID])</DataFieldName>
+      <IsActive>true</IsActive>
+    </Row>
+  </Table>
+  <Table name="GISort">
+    <Row>
+      <DesignID>ff3e500a-44ea-4aaa-b205-63977f9b8f19</DesignID>
+      <LineNbr>1</LineNbr>
+      <DataFieldName>Billing.date</DataFieldName>
+      <IsActive>true</IsActive>
+      <SortOrder>D</SortOrder>
+    </Row>
+    <Row>
+      <DesignID>ff3e500a-44ea-4aaa-b205-63977f9b8f19</DesignID>
+      <LineNbr>2</LineNbr>
+      <DataFieldName>Billing.userID</DataFieldName>
+      <IsActive>true</IsActive>
+      <SortOrder>A</SortOrder>
+    </Row>
+  </Table>
+  <Table name="GIFilter" />
+  <Table name="GIResult">
+    <Row>
+      <DesignID>ff3e500a-44ea-4aaa-b205-63977f9b8f19</DesignID>
+      <LineNbr>2</LineNbr>
+      <Caption>User</Caption>
+      <DefaultNav>true</DefaultNav>
+      <FastFilter>false</FastFilter>
+      <Field>=IIf(InStrRev([Billing.UserID], '@' )&gt;0, Left([Billing.UserID], InStrRev([Billing.UserID], '@' )-1),[Billing.UserID])</Field>
+      <IsActive>true</IsActive>
+      <IsVisible>true</IsVisible>
+      <ObjectName>Billing</ObjectName>
+      <QuickFilter>false</QuickFilter>
+      <RowID>5d221cc7-7c89-4c11-a36d-cb16ac3340c1</RowID>
+      <SortOrder>2</SortOrder>
+    </Row>
+    <Row>
+      <DesignID>ff3e500a-44ea-4aaa-b205-63977f9b8f19</DesignID>
+      <LineNbr>3</LineNbr>
+      <DefaultNav>true</DefaultNav>
+      <FastFilter>false</FastFilter>
+      <Field>recipientType</Field>
+      <IsActive>true</IsActive>
+      <IsVisible>true</IsVisible>
+      <ObjectName>Billing</ObjectName>
+      <QuickFilter>false</QuickFilter>
+      <RowID>33210c8e-207a-484e-8ca9-550088c88842</RowID>
+      <SortOrder>3</SortOrder>
+    </Row>
+    <Row>
+      <DesignID>ff3e500a-44ea-4aaa-b205-63977f9b8f19</DesignID>
+      <LineNbr>5</LineNbr>
+      <AggregateFunction>SUM</AggregateFunction>
+      <DefaultNav>true</DefaultNav>
+      <FastFilter>false</FastFilter>
+      <Field>aIUnits</Field>
+      <IsActive>true</IsActive>
+      <IsVisible>true</IsVisible>
+      <ObjectName>Billing</ObjectName>
+      <QuickFilter>false</QuickFilter>
+      <RowID>a031672d-2949-44af-b496-2dfb89ab3473</RowID>
+      <SortOrder>4</SortOrder>
+      <TotalAggregateFunction>SUM</TotalAggregateFunction>
+    </Row>
+    <Row>
+      <DesignID>ff3e500a-44ea-4aaa-b205-63977f9b8f19</DesignID>
+      <LineNbr>6</LineNbr>
+      <DefaultNav>true</DefaultNav>
+      <FastFilter>false</FastFilter>
+      <Field>date</Field>
+      <IsActive>true</IsActive>
+      <IsVisible>true</IsVisible>
+      <ObjectName>Billing</ObjectName>
+      <QuickFilter>false</QuickFilter>
+      <RowID>24fc9d1a-4925-4a8a-888f-ecbd13af06e8</RowID>
+      <SortOrder>1</SortOrder>
+    </Row>
+  </Table>
+  <Table name="GINavigationScreen" />
+  <Table name="GINavigationParameter" />
+  <Table name="GINavigationCondition" />
+  <Table name="GIMassAction" />
+  <Table name="GIMassUpdateField" />
+  <Table name="GIRecordDefault" />
+</GenericInquiry>
