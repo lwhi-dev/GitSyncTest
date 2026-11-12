@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GenericInquiry formatVersion="1" key="9a5e0000-0000-4000-8000-00000000c0a1" name="GSTEST-CRBAccounts" sourceVersion="26.200.0334">
+<GenericInquiry formatVersion="1" key="9a5e0000-0000-4000-8000-00000000c0a1" name="GSTEST-CRB-Renamed" sourceVersion="26.200.0334">
   <Table name="GIDesign">
     <Row>
       <DesignID>9a5e0000-0000-4000-8000-00000000c0a1</DesignID>
@@ -13,7 +13,7 @@
       <MassActionsOnRecordsEnabled>false</MassActionsOnRecordsEnabled>
       <MassDeleteEnabled>false</MassDeleteEnabled>
       <MassRecordsUpdateEnabled>false</MassRecordsUpdateEnabled>
-      <Name>GSTEST-CRBAccounts</Name>
+      <Name>GSTEST-CRB-Renamed</Name>
       <NewRecordCreationEnabled>true</NewRecordCreationEnabled>
       <NotesAndFilesTable>$&lt;None&gt;</NotesAndFilesTable>
       <PageSize>0</PageSize>
