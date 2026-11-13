@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SiteMapNode formatVersion="1" key="9a5e0000-0000-4000-8000-00000000f101" name="GSTEST Dashboard" sourceVersion="26.200.0334">
+  <Table name="SiteMap">
+    <Row>
+      <NodeID>9a5e0000-0000-4000-8000-00000000f101</NodeID>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <ScreenID>GT0001DB</ScreenID>
+      <SelectedUI>D</SelectedUI>
+      <Title>GSTEST Dashboard</Title>
+      <Url>~/Frames/Default.aspx?id=9a5e0000-0000-4000-8000-00000000f001</Url>
+    </Row>
+  </Table>
+  <Table name="MUIScreen">
+    <Row>
+      <IsPortal>false</IsPortal>
+      <NodeID>9a5e0000-0000-4000-8000-00000000f101</NodeID>
+      <WorkspaceID>a66d7837-0bae-42a9-a338-ca40a71556b5</WorkspaceID>
+      <Order>100</Order>
+      <SubcategoryID>b3afee01-69ec-4620-aac1-980fe02d0fa1</SubcategoryID>
+    </Row>
+  </Table>
+</SiteMapNode>
