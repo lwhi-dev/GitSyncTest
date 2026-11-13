@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GenericInquiry formatVersion="1" key="277fb9fb-348b-4ed2-b2a0-028a5554e657" name="AM-ClockEntry-R" sourceVersion="26.200.0334">
+<GenericInquiry formatVersion="1" key="277fb9fb-348b-4ed2-b2a0-028a5554e657" name="AM-ClockEntry" sourceVersion="26.200.0334">
   <Table name="GIDesign">
     <Row>
       <DesignID>277fb9fb-348b-4ed2-b2a0-028a5554e657</DesignID>
@@ -13,7 +13,7 @@
       <MassActionsOnRecordsEnabled>false</MassActionsOnRecordsEnabled>
       <MassDeleteEnabled>false</MassDeleteEnabled>
       <MassRecordsUpdateEnabled>false</MassRecordsUpdateEnabled>
-      <Name>AM-ClockEntry-R</Name>
+      <Name>AM-ClockEntry</Name>
       <NewRecordCreationEnabled>true</NewRecordCreationEnabled>
       <PageSize>0</PageSize>
       <PrimaryScreenID>AM315000</PrimaryScreenID>
